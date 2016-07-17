@@ -1,0 +1,12 @@
+3rd Party acknowledgements:
+
+Rational class simplify(): 
+   http://en.wikipedia.org/wiki/Euclidean_algorithm 
+   (Creative Commons Attribution-ShareAlike License)
+Process monitor base: 
+   Matthew Adams http://www.codeproject.com/cs/miscctrl/progressdialog.asp 
+   (MIT License)
+EXIF parser base: 
+   Davide Pizzolato http://www.xdp.it/cexif.htm (Freeware)
+   libexiff http://sourceforge.net/projects/libexif (LGPL License)
+

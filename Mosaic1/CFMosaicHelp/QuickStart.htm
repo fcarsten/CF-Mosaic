@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Overview of CF Mosaic</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href="cfmosaic.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<table id="Table1" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			<tr>
+				<td align="center" width="100%">
+					<p class="maintitle">CF Mosaic Quick Start</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" bgColor="#0000ff" height="2"></td>
+			</tr>
+		</table>
+		<p><STRONG><FONT color="#0000ff" size="4">Content</FONT></STRONG></p>
+		<p>
+			<A href="#firsTime">Staring CF Mosaic for the First Time</A><br>
+			<A href="#creatingMosaic">Creating a Mosaic</A>
+		</p>
+		<A name="firsTime"></A>
+		<P><STRONG><FONT color="#0000ff" size="4"> Starting CF&nbsp;Mosaic for the First Time</FONT></STRONG></P>
+		<P>The first time you start CF Mosaic, the program will alert you to the fact that 
+			you have not yet specfified and image repository location.</P>
+		<CENTER>
+			<P><IMG id="IMG1" title="Add Images" alt="The Add Images menu item" src="images\no_repository_error.jpg"
+					border="0"></P>
+		</CENTER>
+		<P>The image repository is a location where CF Mosaic stores the tiles which it 
+			will use to create mosaics, as well as a database with image statistics. You 
+			will now be asked to specify a folder which CF Mosaic should use as image 
+			repository. The following point should be taken into consideration when 
+			choosing a folder:</P>
+		<UL>
+			<LI>
+			CF&nbsp;Mosaic will create a lot of files in that folder. So, chosing a very 
+			exposed folder like your desktop is a bad idea.
+			<LI>
+			The folder should be empty. CF Mosaic will treat each file in that folder as a 
+			potential mosaic tile. CF Mosaic preprocesses all images it stores in the 
+			repository for faster processing. If you just copy images there, performance 
+			might degrade significantly.
+			<LI>
+				CF Mosaic requires between 5kb and 10kb per tile, as well as up to 100MB for 
+				its database. Make sure the folder you select is on a partition with sufficient 
+				free disk space.</LI></UL>
+		<CENTER>
+			<P><IMG id="IMG1" title="Add Images" alt="The Add Images menu item" src="images\repository_select_folder.jpg"
+					border="0"></P>
+		</CENTER>
+		<P>The main window should appear now. You are ready to create your first mosaic:</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\cf_mosaic_blank.jpg"
+				border="0"></P>
+		<A name="creatingMosaic"></A>
+		<P><STRONG><FONT color="#0000ff" size="4"><STRONG><FONT color="#0000ff" size="4">Creating a Mosaic</FONT></STRONG></FONT></STRONG></P>
+		<P>In order to create a mosaic, you have to perform the following steps:</P>
+		<OL>
+			<LI>
+				<A href="#addImagesToRep">Add images to your image repository.</A> <FONT size="1">(If 
+					you haven't done so previously)</FONT>
+			<LI>
+				<A href="#createImgDB">Create the image database.</A> <FONT size="1">(If you 
+					haven't done so previously)</FONT>
+			<LI>
+				<A href="#loadImage">Load the image which you want to transform into a mosaic.</A>
+			<LI>
+				<A href="#runMosaic">Start mosaic creation.</A>
+			<LI>
+				<A href="#saveResult">Save the result when the&nbsp;mosaic is&nbsp;ready. </A>
+			</LI>
+		</OL>
+		<A name="addImagesToRep"></A>
+		<P><FONT color="#0000ff" size="3"><STRONG>1. Add images to your image repository </STRONG>
+			</FONT>
+		</P>
+		<P><FONT color="#0000ff" size="3"><FONT color="#000000"><FONT size="2">(<EM>This step only has to 
+							be performed once. You can add more images later, however)</EM></FONT> </FONT>
+			</FONT>
+		</P>
+		<P>Just after installing CF Mosaic, the program does not contain any images which 
+			it could use as tiles in a mosaic. You need to add your own images to the CF 
+			Mosaic image repository for that purpose. The CF image repository stores small, 
+			mosaic tile sized, copies of your images.</P>
+		<P>To do this select the Menu item <EM>Database&#8594;Add Images</EM>:</P>
+		<CENTER>
+			<P><IMG id="IMG1" title="Add Images" alt="The Add Images menu item" src="images\add_images.jpg"
+					border="0"></P>
+		</CENTER>
+		<P>A file selector box will pop up, asking yout to select the folder which contains 
+			the images you want to add.&nbsp;</P>
+		<CENTER>
+			<P><IMG id="IMG1" title="Add Images" alt="The Add Images menu item" src="images\add_images_folder.jpg"
+					border="0"></P>
+		</CENTER>
+		<P>Select&nbsp;the folder&nbsp;containig your images and&nbsp;off it goes. All 
+			images in that folder or any subfolder of that folder will get added to the CF 
+			Mosaic image repository.</P>
+		<CENTER>
+			<P><IMG id="IMG1" title="Add Images" alt="The Add Images menu item" src="images\add_images_progress.jpg"
+					border="0"></P>
+		</CENTER>
+		<A name="createImgDB"></A>
+		<P><FONT color="#0000ff" size="3"><STRONG>2. Create the image database</STRONG></FONT></P>
+		<FONT color="#000000">
+			<P><FONT color="#0000ff" size="3"><FONT color="#000000"><FONT size="2">(<EM>This step only has to 
+								be performed once. You should repeat this step, however,&nbsp;when you add more 
+								images, or after changing the image repository folder manually)</EM></FONT>
+					</FONT></FONT>
+			</P>
+			<P>
+			After adding your images to the image repository, CF Mosaic will automatically 
+			rebuild its database. The database contains information about the images in the 
+			image repository that allows CF Mosaic to find the best tile for each part of 
+			the mosaic in an efficient way:</FONT></P>
+		<CENTER>
+			<P><IMG title="Add Images" alt="The Add Images menu item" src="images\add_images_recreate_db.jpg"
+					border="0"></P>
+		</CENTER>
+		<A name="loadImage"></A>
+		<P><FONT color="#0000ff" size="3"><STRONG>3.&nbsp;Load the image which you want to 
+					transform into a mosaic</STRONG></FONT></P>
+		<P><FONT color="#000000">Use the <EM>File</EM> menu to open the picture which you want 
+				to convert into a mosaic:</FONT></P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\cf_mosaic_open.jpg"
+				border="0"></P>
+		<P align="left">A file selector box will appear, asking you to select the image 
+			which you want to transform into a mosaic.</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\open_file_dialog.jpg"
+				border="0"></P>
+		<P align="left"><FONT color="#0000ff" size="3"><FONT color="#000000" size="2">After the 
+					image has loaded it will be displayed in the main window. Although the image 
+					appears scaled to fit into the window, the size of the underlying image is not 
+					changed. The size of the underlying image will always be the same, no matter 
+					which size you resize the CF Mosaic main window to. </FONT></FONT>
+		</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\mosaic_main_start.jpg"
+				border="0"></P>
+		<A name="runMosaic"></A>
+		<P><FONT color="#0000ff" size="3"><STRONG>4. Start mosaic creation</STRONG></FONT></P>
+		<P><FONT color="#0000ff" size="3"><FONT color="#000000" size="2"> You can start creating 
+					the mosaic by selecting the menu item <EM>Mosaic--Create Mosaic</EM>.</FONT></FONT></P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\start_mosaic.jpg"
+				border="0"></P>
+		<P>You can monitor the progress in the status line:</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\status.jpg" border="0"></P>
+		<P>You can&nbsp;also watch CF Mosaic creating the mosaic by&nbsp;selecting the 
+			checkbox <EM>Continuous Update</EM>:</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\continuous_update.jpg"
+				border="0"></P>
+		<P>Each tile will now be drawn as soon as it has been computed:</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\mosaic_main_half.jpg"
+				border="0"></P>
+		<P>The mosaic is finished when the status bar shows 0:00 as <EM>Time Remaining</EM> 
+			and <EM>Tiles</EM> are down to 1. Note that no special message box or similar 
+			will pop-up. Further, the main window will now display the mosaic and all 
+			controls will be enabled again:</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\mosaic_main_full.jpg"
+				border="0"></P>
+<A name="saveResult"></A>
+
+		<P><FONT color="#0000ff" size="3"><STRONG>5. Save the result when the mosaic is ready</STRONG></FONT></P>
+		<P>You can now save the mosaic by using the menu item&nbsp;<EM>File--Save </EM>As:</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\save_mosaic.jpg" border="0"></P>
+		<P>A file selector box will pop up where you can select the file name for the 
+			created mosaic.</P>
+		<P align="center"><IMG title="Add Images" alt="The Add Images menu item" src="images\start_mosaic_dialog.jpg"
+				border="0"></P>
+		<P align="left">That's it, basically. You can now post-process or print the mosaic 
+			with you favourite image processing program.</P>
+		<P align="left">&nbsp;</P>
+	</body>
+</html>

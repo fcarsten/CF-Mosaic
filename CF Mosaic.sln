@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CF Mosaic", "Mosaic1\CF Mosaic.csproj", "{DCAC8DCA-5F36-4BC3-96B4-CF007DD6010F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCAC8DCA-5F36-4BC3-96B4-CF007DD6010F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAC8DCA-5F36-4BC3-96B4-CF007DD6010F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAC8DCA-5F36-4BC3-96B4-CF007DD6010F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAC8DCA-5F36-4BC3-96B4-CF007DD6010F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

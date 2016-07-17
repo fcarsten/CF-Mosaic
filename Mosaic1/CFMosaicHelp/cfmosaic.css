@@ -1,0 +1,16 @@
+body
+{
+	font-size: 10pt;
+	color: black;
+	margin-top: 10pt;
+	margin-left: 20pt;
+	font-family: Verdana, Tahoma, Arial, Sans-Serif;
+}
+
+.maintitle
+{
+	font-weight: bold;
+	font-size: 24pt;
+	color: blue;
+	font-family: Garamond, Georgia, 'Times New Roman' , Serif;
+}
