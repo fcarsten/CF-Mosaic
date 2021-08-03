@@ -106,7 +106,7 @@ namespace org.carsten
 			{
 				return databasePath;
 			}
-			RegistryKey key = Registry.CurrentUser.OpenSubKey(REG_KEY);
+			RegistryKey key = Registry.CurrentUser.OpenSubKey(REG_KEY, RegistryKeyPermissionCheck.ReadWriteSubTree);
 
 			// If the return value is null, the key doesn't exist
 			if ( key == null ) 
@@ -116,22 +116,26 @@ namespace org.carsten
 			}
 
 			databasePath = (string)key.GetValue( REG_VALUE );
-			if(databasePath==null || !System.IO.Directory.Exists(databasePath)) 
+			if (databasePath == null)
 			{
-				MessageBox.Show("Image repository not found.\n\nYou either have not yet specified a folder which CF Mosaic should\nuse as its image repository, or that folder has been deleted or moved.\nPlease specify a new folder.",
-					"CF Mosaic: Image repository does not exist", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+				MessageBox.Show("Mosaic tile cache directory not set.\n\nYou need to select a folder which CF Mosaic can use cache tiles.",
+					"CF Mosaic: Tile cache folder not set", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+			} else if (!System.IO.Directory.Exists(databasePath))
+			{
+				MessageBox.Show("Mosaic tile cache directory not found.\n\nThe tile cache folder has been deleted or moved.\nPlease specify a new folder.",
+					"CF Mosaic: Tile cache folder does not exist", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 			}
-			
-			while(databasePath==null || !System.IO.Directory.Exists(databasePath)) 
+
+			while (databasePath==null || !System.IO.Directory.Exists(databasePath)) 
 			{
 				FolderBrowserDialog fd = new FolderBrowserDialog();
-				fd.Description = "Please select the folder which CF Mosaic should use as image repository:";
+				fd.Description = "Please select the folder which CF Mosaic should use as tile cache:";
 				fd.ShowDialog();
 				databasePath = fd.SelectedPath;
 				if(databasePath==null || databasePath=="") 
 				{
-					MessageBox.Show("CF Mosaic can not work without an image repository\nExiting ...",
-						"CF Mosaic: No Image Repository specified", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("CF Mosaic can not work without a tile cache\nExiting ...",
+						"CF Mosaic: No Tile Cache specified", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					Environment.Exit(0);
 				}
 
@@ -147,8 +151,8 @@ namespace org.carsten
 						"CF Mosaic: Invalid Image Repository Path", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 			
-				key.SetValue(REG_VALUE, databasePath);
 			}
+			key.SetValue(REG_VALUE, databasePath);
 			key.Close();
 			return databasePath;
 		}

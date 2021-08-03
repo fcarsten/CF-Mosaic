@@ -130,487 +130,492 @@ this.panel1.AllowDrop=true;
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.mainMenu1 = new System.Windows.Forms.MainMenu();
-			this.FileMenu = new System.Windows.Forms.MenuItem();
-			this.OpenMenu = new System.Windows.Forms.MenuItem();
-			this.SaveAsMenu = new System.Windows.Forms.MenuItem();
-			this.menuItem5 = new System.Windows.Forms.MenuItem();
-			this.ExitMenu = new System.Windows.Forms.MenuItem();
-			this.View = new System.Windows.Forms.MenuItem();
-			this.ScaleToFit = new System.Windows.Forms.MenuItem();
-			this.ScaleOneToOne = new System.Windows.Forms.MenuItem();
-			this.menuItem1 = new System.Windows.Forms.MenuItem();
-			this.MosaicMenu = new System.Windows.Forms.MenuItem();
-			this.menuRotate = new System.Windows.Forms.MenuItem();
-			this.menuRotate90 = new System.Windows.Forms.MenuItem();
-			this.menuRotate270 = new System.Windows.Forms.MenuItem();
-			this.menuRotate180 = new System.Windows.Forms.MenuItem();
-			this.menuItem3 = new System.Windows.Forms.MenuItem();
-			this.addImagesMenu = new System.Windows.Forms.MenuItem();
-			this.menuItem10 = new System.Windows.Forms.MenuItem();
-			this.clearDatabaseMenu = new System.Windows.Forms.MenuItem();
-			this.menuItem4 = new System.Windows.Forms.MenuItem();
-			this.clearRepositoryMenu = new System.Windows.Forms.MenuItem();
-			this.menuItem7 = new System.Windows.Forms.MenuItem();
-			this.menuItem8 = new System.Windows.Forms.MenuItem();
-			this.menuItem9 = new System.Windows.Forms.MenuItem();
-			this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.panel2 = new System.Windows.Forms.Panel();
-			this.label3 = new System.Windows.Forms.Label();
-			this.mosaicRepeatRateUpDown = new System.Windows.Forms.NumericUpDown();
-			this.mosaicCancelButton = new System.Windows.Forms.Button();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label1 = new System.Windows.Forms.Label();
-			this.mosaicHeightUpDown = new System.Windows.Forms.NumericUpDown();
-			this.mosaicWidthUpDown = new System.Windows.Forms.NumericUpDown();
-			this.continuousUpdateCheckbox = new System.Windows.Forms.CheckBox();
-			this.opacityUpDownControl = new System.Windows.Forms.NumericUpDown();
-			this.OpacityLabel = new System.Windows.Forms.Label();
-			this.saveImageDialog = new System.Windows.Forms.SaveFileDialog();
-			this.statusBar = new System.Windows.Forms.StatusBar();
-			this.databaseStatus = new System.Windows.Forms.StatusBarPanel();
-			this.etaStatusPanel = new System.Windows.Forms.StatusBarPanel();
-			this.numTilesStatusPanel = new System.Windows.Forms.StatusBarPanel();
-			this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-			this.toolTipToolBar = new System.Windows.Forms.ToolTip(this.components);
-			this.cfMosaicHelp = new System.Windows.Forms.HelpProvider();
-			this.panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.mosaicRepeatRateUpDown)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.mosaicHeightUpDown)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.mosaicWidthUpDown)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.opacityUpDownControl)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.databaseStatus)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.etaStatusPanel)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.numTilesStatusPanel)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlText;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(496, 328);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
-			this.pictureBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
-			this.pictureBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
-			// 
-			// mainMenu1
-			// 
-			this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																																							this.FileMenu,
-																																							this.View,
-																																							this.menuItem1,
-																																							this.menuItem3,
-																																							this.menuItem7});
-			// 
-			// FileMenu
-			// 
-			this.FileMenu.Index = 0;
-			this.FileMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																																						 this.OpenMenu,
-																																						 this.SaveAsMenu,
-																																						 this.menuItem5,
-																																						 this.ExitMenu});
-			this.FileMenu.Text = "File";
-			// 
-			// OpenMenu
-			// 
-			this.OpenMenu.Index = 0;
-			this.OpenMenu.Text = "Open";
-			this.OpenMenu.Click += new System.EventHandler(this.menuItem2_Click);
-			// 
-			// SaveAsMenu
-			// 
-			this.SaveAsMenu.Index = 1;
-			this.SaveAsMenu.Text = "Save As";
-			this.SaveAsMenu.Click += new System.EventHandler(this.SaveAsMenu_Click);
-			// 
-			// menuItem5
-			// 
-			this.menuItem5.Index = 2;
-			this.menuItem5.Text = "-";
-			// 
-			// ExitMenu
-			// 
-			this.ExitMenu.Index = 3;
-			this.ExitMenu.Text = "Exit";
-			this.ExitMenu.Click += new System.EventHandler(this.ExitMenu_Click);
-			// 
-			// View
-			// 
-			this.View.Index = 1;
-			this.View.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																																				 this.ScaleToFit,
-																																				 this.ScaleOneToOne});
-			this.View.Text = "View";
-			// 
-			// ScaleToFit
-			// 
-			this.ScaleToFit.Index = 0;
-			this.ScaleToFit.Text = "Scale to fit";
-			this.ScaleToFit.Click += new System.EventHandler(this.ScaleToFit_Click);
-			// 
-			// ScaleOneToOne
-			// 
-			this.ScaleOneToOne.Index = 1;
-			this.ScaleOneToOne.Text = "Original Size";
-			this.ScaleOneToOne.Click += new System.EventHandler(this.ScaleOneToOne_Click);
-			// 
-			// menuItem1
-			// 
-			this.menuItem1.Index = 2;
-			this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																																							this.MosaicMenu,
-																																							this.menuRotate});
-			this.menuItem1.Text = "Mosaic";
-			// 
-			// MosaicMenu
-			// 
-			this.MosaicMenu.Index = 0;
-			this.MosaicMenu.Text = "Create Mosaic";
-			this.MosaicMenu.Click += new System.EventHandler(this.createMosaic);
-			// 
-			// menuRotate
-			// 
-			this.menuRotate.Index = 1;
-			this.menuRotate.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																																							 this.menuRotate90,
-																																							 this.menuRotate270,
-																																							 this.menuRotate180});
-			this.menuRotate.Text = "Rotate";
-			// 
-			// menuRotate90
-			// 
-			this.menuRotate90.Index = 0;
-			this.menuRotate90.Text = "Rotate 90 (->)";
-			this.menuRotate90.Click += new System.EventHandler(this.menuRotate90_Click);
-			// 
-			// menuRotate270
-			// 
-			this.menuRotate270.Index = 1;
-			this.menuRotate270.Text = "Rotate 270 (<-)";
-			this.menuRotate270.Click += new System.EventHandler(this.menuRotate270_Click);
-			// 
-			// menuRotate180
-			// 
-			this.menuRotate180.Index = 2;
-			this.menuRotate180.Text = "Rotate 180";
-			this.menuRotate180.Click += new System.EventHandler(this.menuRotate180_Click);
-			// 
-			// menuItem3
-			// 
-			this.menuItem3.Index = 3;
-			this.menuItem3.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																																							this.addImagesMenu,
-																																							this.menuItem10,
-																																							this.clearDatabaseMenu,
-																																							this.menuItem4,
-																																							this.clearRepositoryMenu});
-			this.menuItem3.Text = "Database";
-			// 
-			// addImagesMenu
-			// 
-			this.addImagesMenu.Index = 0;
-			this.addImagesMenu.Text = "Add Images to Repository";
-			this.addImagesMenu.Click += new System.EventHandler(this.addImagesMenu_Click);
-			// 
-			// menuItem10
-			// 
-			this.menuItem10.Index = 1;
-			this.menuItem10.Text = "-";
-			// 
-			// clearDatabaseMenu
-			// 
-			this.clearDatabaseMenu.Index = 2;
-			this.clearDatabaseMenu.Text = "Recreate Database";
-			this.clearDatabaseMenu.Click += new System.EventHandler(this.clearDatabaseMenu_Click_1);
-			// 
-			// menuItem4
-			// 
-			this.menuItem4.Index = 3;
-			this.menuItem4.Text = "-";
-			// 
-			// clearRepositoryMenu
-			// 
-			this.clearRepositoryMenu.Index = 4;
-			this.clearRepositoryMenu.Text = "Clear Image Repository";
-			this.clearRepositoryMenu.Click += new System.EventHandler(this.clearDatabaseMenu_Click);
-			// 
-			// menuItem7
-			// 
-			this.menuItem7.Index = 4;
-			this.menuItem7.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																																							this.menuItem8,
-																																							this.menuItem9});
-			this.menuItem7.Text = "Help";
-			// 
-			// menuItem8
-			// 
-			this.menuItem8.Index = 0;
-			this.menuItem8.Text = "Manual";
-			this.menuItem8.Click += new System.EventHandler(this.menuItem8_Click);
-			// 
-			// menuItem9
-			// 
-			this.menuItem9.Index = 1;
-			this.menuItem9.Text = "About";
-			this.menuItem9.Click += new System.EventHandler(this.menuItem9_Click);
-			// 
-			// openFileDialog
-			// 
-			this.openFileDialog.Title = "Open Mosaic Source Image";
-			// 
-			// panel1
-			// 
-			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-				| System.Windows.Forms.AnchorStyles.Left) 
-				| System.Windows.Forms.AnchorStyles.Right)));
-			this.panel1.BackColor = System.Drawing.Color.Black;
-			this.panel1.Controls.Add(this.pictureBox1);
-			this.panel1.Location = new System.Drawing.Point(0, 64);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(624, 376);
-			this.panel1.TabIndex = 1;
-			this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
-			this.panel1.SizeChanged += new System.EventHandler(this.panel1_SizeChanged);
-			this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
-			this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
-			
-			// 
-			// panel2
-			// 
-			this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.panel2.Controls.Add(this.label3);
-			this.panel2.Controls.Add(this.mosaicRepeatRateUpDown);
-			this.panel2.Controls.Add(this.mosaicCancelButton);
-			this.panel2.Controls.Add(this.label2);
-			this.panel2.Controls.Add(this.label1);
-			this.panel2.Controls.Add(this.mosaicHeightUpDown);
-			this.panel2.Controls.Add(this.mosaicWidthUpDown);
-			this.panel2.Controls.Add(this.continuousUpdateCheckbox);
-			this.panel2.Controls.Add(this.opacityUpDownControl);
-			this.panel2.Controls.Add(this.OpacityLabel);
-			this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-			this.panel2.Location = new System.Drawing.Point(0, 0);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(624, 64);
-			this.panel2.TabIndex = 2;
-			// 
-			// label3
-			// 
-			this.label3.Location = new System.Drawing.Point(140, 12);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(96, 12);
-			this.label3.TabIndex = 10;
-			this.label3.Text = "Min Tile Distance:";
-			this.toolTipToolBar.SetToolTip(this.label3, "The minimum distance from its first use after which the same tile can be used aga" +
-				"in.\nThe distance applies vertically and horizontally.");
-			// 
-			// mosaicRepeatRateUpDown
-			// 
-			this.mosaicRepeatRateUpDown.Location = new System.Drawing.Point(240, 8);
-			this.mosaicRepeatRateUpDown.Name = "mosaicRepeatRateUpDown";
-			this.mosaicRepeatRateUpDown.Size = new System.Drawing.Size(48, 20);
-			this.mosaicRepeatRateUpDown.TabIndex = 9;
-			this.mosaicRepeatRateUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.toolTipToolBar.SetToolTip(this.mosaicRepeatRateUpDown, "The minimum distance from its first use after which the same tile can be used aga" +
-				"in.\nThe distance applies vertically and horizontally.");
-			this.mosaicRepeatRateUpDown.Value = new System.Decimal(new int[] {
-																																				 20,
-																																				 0,
-																																				 0,
-																																				 0});
-			this.mosaicRepeatRateUpDown.ValueChanged += new System.EventHandler(this.mosaicRepeatRateUpDown_ValueChanged);
-			// 
-			// mosaicCancelButton
-			// 
-			this.mosaicCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.mosaicCancelButton.Location = new System.Drawing.Point(544, 32);
-			this.mosaicCancelButton.Name = "mosaicCancelButton";
-			this.mosaicCancelButton.TabIndex = 8;
-			this.mosaicCancelButton.Text = "Cancel";
-			this.toolTipToolBar.SetToolTip(this.mosaicCancelButton, "Cancels the computation of the mosaic.\nAll tiles which have already been computed" +
-				" will stay however.");
-			this.mosaicCancelButton.Visible = false;
-			this.mosaicCancelButton.Click += new System.EventHandler(this.mosaicCancelButton_Click);
-			// 
-			// label2
-			// 
-			this.label2.Location = new System.Drawing.Point(12, 32);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(64, 12);
-			this.label2.TabIndex = 7;
-			this.label2.Text = "Tile Height:";
-			this.toolTipToolBar.SetToolTip(this.label2, "The height of each mosaic tile.\nDisabled while a mosaic is being computed.");
-			// 
-			// label1
-			// 
-			this.label1.Location = new System.Drawing.Point(12, 12);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(60, 12);
-			this.label1.TabIndex = 6;
-			this.label1.Text = "Tile Width:";
-			this.toolTipToolBar.SetToolTip(this.label1, "The width of each mosaic tile.\nDisabled while a mosaic is being computed.");
-			// 
-			// mosaicHeightUpDown
-			// 
-			this.mosaicHeightUpDown.Location = new System.Drawing.Point(80, 32);
-			this.mosaicHeightUpDown.Maximum = new System.Decimal(new int[] {
-																																			 105,
-																																			 0,
-																																			 0,
-																																			 0});
-			this.mosaicHeightUpDown.Name = "mosaicHeightUpDown";
-			this.mosaicHeightUpDown.Size = new System.Drawing.Size(44, 20);
-			this.mosaicHeightUpDown.TabIndex = 5;
-			this.mosaicHeightUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.mosaicHeightUpDown.Value = new System.Decimal(new int[] {
-																																		 75,
-																																		 0,
-																																		 0,
-																																		 0});
-			// 
-			// mosaicWidthUpDown
-			// 
-			this.mosaicWidthUpDown.Location = new System.Drawing.Point(80, 8);
-			this.mosaicWidthUpDown.Maximum = new System.Decimal(new int[] {
-																																			150,
-																																			0,
-																																			0,
-																																			0});
-			this.mosaicWidthUpDown.Name = "mosaicWidthUpDown";
-			this.mosaicWidthUpDown.Size = new System.Drawing.Size(44, 20);
-			this.mosaicWidthUpDown.TabIndex = 4;
-			this.mosaicWidthUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.toolTipToolBar.SetToolTip(this.mosaicWidthUpDown, "The width of each mosaic tile.\nDisabled while a mosaic is being computed.");
-			this.mosaicWidthUpDown.Value = new System.Decimal(new int[] {
-																																		100,
-																																		0,
-																																		0,
-																																		0});
-			// 
-			// continuousUpdateCheckbox
-			// 
-			this.continuousUpdateCheckbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.continuousUpdateCheckbox.Location = new System.Drawing.Point(500, 4);
-			this.continuousUpdateCheckbox.Name = "continuousUpdateCheckbox";
-			this.continuousUpdateCheckbox.Size = new System.Drawing.Size(120, 24);
-			this.continuousUpdateCheckbox.TabIndex = 3;
-			this.continuousUpdateCheckbox.Text = "Continuous Update";
-			this.toolTipToolBar.SetToolTip(this.continuousUpdateCheckbox, "If checked, each tile is drawn immediatley after it is computed. \nThis slows down" +
-				" things, but you see what\'s happening.\nNote: You can always force a refresh by s" +
-				"crolling or resizing the window.");
-			this.continuousUpdateCheckbox.CheckedChanged += new System.EventHandler(this.continuousUpdateCheckbox_CheckedChanged);
-			// 
-			// opacityUpDownControl
-			// 
-			this.opacityUpDownControl.Location = new System.Drawing.Point(240, 32);
-			this.opacityUpDownControl.Minimum = new System.Decimal(new int[] {
-																																				 10,
-																																				 0,
-																																				 0,
-																																				 0});
-			this.opacityUpDownControl.Name = "opacityUpDownControl";
-			this.opacityUpDownControl.Size = new System.Drawing.Size(48, 20);
-			this.opacityUpDownControl.TabIndex = 2;
-			this.opacityUpDownControl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.toolTipToolBar.SetToolTip(this.opacityUpDownControl, "The transparency with which the tile is blended into the original image.\nValid va" +
-				"lues are 10 to 100.\n  100: The tile totally replaces the background.\n   10: The " +
-				"result is 10% tile and 90% background.");
-			this.opacityUpDownControl.Value = new System.Decimal(new int[] {
-																																			 95,
-																																			 0,
-																																			 0,
-																																			 0});
-			this.opacityUpDownControl.ValueChanged += new System.EventHandler(this.opacityUpDownControl_ValueChanged);
-			// 
-			// OpacityLabel
-			// 
-			this.OpacityLabel.Location = new System.Drawing.Point(160, 28);
-			this.OpacityLabel.Name = "OpacityLabel";
-			this.OpacityLabel.Size = new System.Drawing.Size(64, 23);
-			this.OpacityLabel.TabIndex = 1;
-			this.OpacityLabel.Text = "Opacity %:";
-			this.OpacityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.toolTipToolBar.SetToolTip(this.OpacityLabel, "The transparency with which the tile is blended into the original image.\nValid va" +
-				"lues are 10 to 100.\n  100: The tile totally replaces the background.\n  10: The r" +
-				"esult is 10% tile and 90% background.");
-			// 
-			// saveImageDialog
-			// 
-			this.saveImageDialog.DefaultExt = "jpg";
-			this.saveImageDialog.Filter = "JPEG Image|*.jpg";
-			this.saveImageDialog.Title = "Select Mosaic File Name";
-			// 
-			// statusBar
-			// 
-			this.statusBar.Location = new System.Drawing.Point(0, 437);
-			this.statusBar.Name = "statusBar";
-			this.statusBar.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
-																																								 this.databaseStatus,
-																																								 this.etaStatusPanel,
-																																								 this.numTilesStatusPanel});
-			this.statusBar.ShowPanels = true;
-			this.statusBar.Size = new System.Drawing.Size(624, 16);
-			this.statusBar.TabIndex = 3;
-			this.statusBar.Text = " Status:";
-			// 
-			// databaseStatus
-			// 
-			this.databaseStatus.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-			this.databaseStatus.Text = "Database: 0 Tiles";
-			this.databaseStatus.Width = 102;
-			// 
-			// etaStatusPanel
-			// 
-			this.etaStatusPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-			this.etaStatusPanel.Text = "Time Remaining: 00:00";
-			this.etaStatusPanel.Width = 131;
-			// 
-			// numTilesStatusPanel
-			// 
-			this.numTilesStatusPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
-			this.numTilesStatusPanel.Text = "Tiles: 0 of 0";
-			this.numTilesStatusPanel.Width = 72;
-			// 
-			// toolTipToolBar
-			// 
-			this.toolTipToolBar.ShowAlways = true;
-			// 
-			// cfMosaicHelp
-			// 
-			this.cfMosaicHelp.HelpNamespace = "F:\\Documents and Settings\\Carsten\\Desktop\\program\\Mosaic1\\Mosaic1\\cf mosaic oh.ch" +
-				"m";
-			// 
-			// MosaicMain
-			// 
-			this.AllowDrop = true;
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(624, 453);
-			this.Controls.Add(this.statusBar);
-			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.panel1);
-			this.Menu = this.mainMenu1;
-			this.MinimumSize = new System.Drawing.Size(444, 216);
-			this.Name = "MosaicMain";
-			this.Text = "CF Mosaic";
-			this.Load += new System.EventHandler(this.MosaicMain_Load);
-			this.panel1.ResumeLayout(false);
-			this.panel2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.mosaicRepeatRateUpDown)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.mosaicHeightUpDown)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.mosaicWidthUpDown)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.opacityUpDownControl)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.databaseStatus)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.etaStatusPanel)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.numTilesStatusPanel)).EndInit();
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mainMenu1 = new System.Windows.Forms.MainMenu(this.components);
+            this.FileMenu = new System.Windows.Forms.MenuItem();
+            this.OpenMenu = new System.Windows.Forms.MenuItem();
+            this.SaveAsMenu = new System.Windows.Forms.MenuItem();
+            this.menuItem5 = new System.Windows.Forms.MenuItem();
+            this.ExitMenu = new System.Windows.Forms.MenuItem();
+            this.View = new System.Windows.Forms.MenuItem();
+            this.ScaleToFit = new System.Windows.Forms.MenuItem();
+            this.ScaleOneToOne = new System.Windows.Forms.MenuItem();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.MosaicMenu = new System.Windows.Forms.MenuItem();
+            this.menuRotate = new System.Windows.Forms.MenuItem();
+            this.menuRotate90 = new System.Windows.Forms.MenuItem();
+            this.menuRotate270 = new System.Windows.Forms.MenuItem();
+            this.menuRotate180 = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
+            this.addImagesMenu = new System.Windows.Forms.MenuItem();
+            this.menuItem10 = new System.Windows.Forms.MenuItem();
+            this.clearDatabaseMenu = new System.Windows.Forms.MenuItem();
+            this.menuItem4 = new System.Windows.Forms.MenuItem();
+            this.clearRepositoryMenu = new System.Windows.Forms.MenuItem();
+            this.menuItem7 = new System.Windows.Forms.MenuItem();
+            this.menuItem8 = new System.Windows.Forms.MenuItem();
+            this.menuItem9 = new System.Windows.Forms.MenuItem();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.mosaicRepeatRateUpDown = new System.Windows.Forms.NumericUpDown();
+            this.mosaicCancelButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mosaicHeightUpDown = new System.Windows.Forms.NumericUpDown();
+            this.mosaicWidthUpDown = new System.Windows.Forms.NumericUpDown();
+            this.continuousUpdateCheckbox = new System.Windows.Forms.CheckBox();
+            this.opacityUpDownControl = new System.Windows.Forms.NumericUpDown();
+            this.OpacityLabel = new System.Windows.Forms.Label();
+            this.saveImageDialog = new System.Windows.Forms.SaveFileDialog();
+            this.statusBar = new System.Windows.Forms.StatusBar();
+            this.databaseStatus = new System.Windows.Forms.StatusBarPanel();
+            this.etaStatusPanel = new System.Windows.Forms.StatusBarPanel();
+            this.numTilesStatusPanel = new System.Windows.Forms.StatusBarPanel();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.toolTipToolBar = new System.Windows.Forms.ToolTip(this.components);
+            this.cfMosaicHelp = new System.Windows.Forms.HelpProvider();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mosaicRepeatRateUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mosaicHeightUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mosaicWidthUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opacityUpDownControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.etaStatusPanel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTilesStatusPanel)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ControlText;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(595, 378);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
+            this.pictureBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
+            // 
+            // mainMenu1
+            // 
+            this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.FileMenu,
+            this.View,
+            this.menuItem1,
+            this.menuItem3,
+            this.menuItem7});
+            // 
+            // FileMenu
+            // 
+            this.FileMenu.Index = 0;
+            this.FileMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.OpenMenu,
+            this.SaveAsMenu,
+            this.menuItem5,
+            this.ExitMenu});
+            this.FileMenu.Text = "File";
+            // 
+            // OpenMenu
+            // 
+            this.OpenMenu.Index = 0;
+            this.OpenMenu.Text = "Open";
+            this.OpenMenu.Click += new System.EventHandler(this.menuItem2_Click);
+            // 
+            // SaveAsMenu
+            // 
+            this.SaveAsMenu.Index = 1;
+            this.SaveAsMenu.Text = "Save As";
+            this.SaveAsMenu.Click += new System.EventHandler(this.SaveAsMenu_Click);
+            // 
+            // menuItem5
+            // 
+            this.menuItem5.Index = 2;
+            this.menuItem5.Text = "-";
+            // 
+            // ExitMenu
+            // 
+            this.ExitMenu.Index = 3;
+            this.ExitMenu.Text = "Exit";
+            this.ExitMenu.Click += new System.EventHandler(this.ExitMenu_Click);
+            // 
+            // View
+            // 
+            this.View.Index = 1;
+            this.View.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.ScaleToFit,
+            this.ScaleOneToOne});
+            this.View.Text = "View";
+            // 
+            // ScaleToFit
+            // 
+            this.ScaleToFit.Index = 0;
+            this.ScaleToFit.Text = "Scale to fit";
+            this.ScaleToFit.Click += new System.EventHandler(this.ScaleToFit_Click);
+            // 
+            // ScaleOneToOne
+            // 
+            this.ScaleOneToOne.Index = 1;
+            this.ScaleOneToOne.Text = "Original Size";
+            this.ScaleOneToOne.Click += new System.EventHandler(this.ScaleOneToOne_Click);
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 2;
+            this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.MosaicMenu,
+            this.menuRotate});
+            this.menuItem1.Text = "Mosaic";
+            // 
+            // MosaicMenu
+            // 
+            this.MosaicMenu.Index = 0;
+            this.MosaicMenu.Text = "Create Mosaic";
+            this.MosaicMenu.Click += new System.EventHandler(this.createMosaic);
+            // 
+            // menuRotate
+            // 
+            this.menuRotate.Index = 1;
+            this.menuRotate.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuRotate90,
+            this.menuRotate270,
+            this.menuRotate180});
+            this.menuRotate.Text = "Rotate";
+            // 
+            // menuRotate90
+            // 
+            this.menuRotate90.Index = 0;
+            this.menuRotate90.Text = "Rotate 90 (->)";
+            this.menuRotate90.Click += new System.EventHandler(this.menuRotate90_Click);
+            // 
+            // menuRotate270
+            // 
+            this.menuRotate270.Index = 1;
+            this.menuRotate270.Text = "Rotate 270 (<-)";
+            this.menuRotate270.Click += new System.EventHandler(this.menuRotate270_Click);
+            // 
+            // menuRotate180
+            // 
+            this.menuRotate180.Index = 2;
+            this.menuRotate180.Text = "Rotate 180";
+            this.menuRotate180.Click += new System.EventHandler(this.menuRotate180_Click);
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 3;
+            this.menuItem3.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.addImagesMenu,
+            this.menuItem10,
+            this.clearDatabaseMenu,
+            this.menuItem4,
+            this.clearRepositoryMenu});
+            this.menuItem3.Text = "Database";
+            // 
+            // addImagesMenu
+            // 
+            this.addImagesMenu.Index = 0;
+            this.addImagesMenu.Text = "Add Images to Tile Cache";
+            this.addImagesMenu.Click += new System.EventHandler(this.addImagesMenu_Click);
+            // 
+            // menuItem10
+            // 
+            this.menuItem10.Index = 1;
+            this.menuItem10.Text = "-";
+            // 
+            // clearDatabaseMenu
+            // 
+            this.clearDatabaseMenu.Index = 2;
+            this.clearDatabaseMenu.Text = "Recreate Database";
+            this.clearDatabaseMenu.Click += new System.EventHandler(this.clearDatabaseMenu_Click_1);
+            // 
+            // menuItem4
+            // 
+            this.menuItem4.Index = 3;
+            this.menuItem4.Text = "-";
+            // 
+            // clearRepositoryMenu
+            // 
+            this.clearRepositoryMenu.Index = 4;
+            this.clearRepositoryMenu.Text = "Clear Tile Cache";
+            this.clearRepositoryMenu.Click += new System.EventHandler(this.clearDatabaseMenu_Click);
+            // 
+            // menuItem7
+            // 
+            this.menuItem7.Index = 4;
+            this.menuItem7.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem8,
+            this.menuItem9});
+            this.menuItem7.Text = "Help";
+            // 
+            // menuItem8
+            // 
+            this.menuItem8.Index = 0;
+            this.menuItem8.Text = "Manual";
+            this.menuItem8.Click += new System.EventHandler(this.menuItem8_Click);
+            // 
+            // menuItem9
+            // 
+            this.menuItem9.Index = 1;
+            this.menuItem9.Text = "About";
+            this.menuItem9.Click += new System.EventHandler(this.menuItem9_Click);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.Title = "Open Mosaic Source Image";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(0, 74);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(624, 364);
+            this.panel1.TabIndex = 1;
+            this.panel1.SizeChanged += new System.EventHandler(this.panel1_SizeChanged);
+            this.panel1.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragDrop);
+            this.panel1.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox1_DragEnter);
+            this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.mosaicRepeatRateUpDown);
+            this.panel2.Controls.Add(this.mosaicCancelButton);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.mosaicHeightUpDown);
+            this.panel2.Controls.Add(this.mosaicWidthUpDown);
+            this.panel2.Controls.Add(this.continuousUpdateCheckbox);
+            this.panel2.Controls.Add(this.opacityUpDownControl);
+            this.panel2.Controls.Add(this.OpacityLabel);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(624, 74);
+            this.panel2.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(168, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 14);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Min Tile Distance:";
+            this.toolTipToolBar.SetToolTip(this.label3, "The minimum distance from its first use after which the same tile can be used aga" +
+        "in.\nThe distance applies vertically and horizontally.");
+            // 
+            // mosaicRepeatRateUpDown
+            // 
+            this.mosaicRepeatRateUpDown.Location = new System.Drawing.Point(288, 9);
+            this.mosaicRepeatRateUpDown.Name = "mosaicRepeatRateUpDown";
+            this.mosaicRepeatRateUpDown.Size = new System.Drawing.Size(58, 22);
+            this.mosaicRepeatRateUpDown.TabIndex = 9;
+            this.mosaicRepeatRateUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTipToolBar.SetToolTip(this.mosaicRepeatRateUpDown, "The minimum distance from its first use after which the same tile can be used aga" +
+        "in.\nThe distance applies vertically and horizontally.");
+            this.mosaicRepeatRateUpDown.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.mosaicRepeatRateUpDown.ValueChanged += new System.EventHandler(this.mosaicRepeatRateUpDown_ValueChanged);
+            // 
+            // mosaicCancelButton
+            // 
+            this.mosaicCancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mosaicCancelButton.Location = new System.Drawing.Point(528, 37);
+            this.mosaicCancelButton.Name = "mosaicCancelButton";
+            this.mosaicCancelButton.Size = new System.Drawing.Size(90, 26);
+            this.mosaicCancelButton.TabIndex = 8;
+            this.mosaicCancelButton.Text = "Cancel";
+            this.toolTipToolBar.SetToolTip(this.mosaicCancelButton, "Cancels the computation of the mosaic.\nAll tiles which have already been computed" +
+        " will stay however.");
+            this.mosaicCancelButton.Visible = false;
+            this.mosaicCancelButton.Click += new System.EventHandler(this.mosaicCancelButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(14, 37);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(77, 14);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Tile Height:";
+            this.toolTipToolBar.SetToolTip(this.label2, "The height of each mosaic tile.\nDisabled while a mosaic is being computed.");
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(14, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 14);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Tile Width:";
+            this.toolTipToolBar.SetToolTip(this.label1, "The width of each mosaic tile.\nDisabled while a mosaic is being computed.");
+            // 
+            // mosaicHeightUpDown
+            // 
+            this.mosaicHeightUpDown.Location = new System.Drawing.Point(96, 37);
+            this.mosaicHeightUpDown.Maximum = new decimal(new int[] {
+            105,
+            0,
+            0,
+            0});
+            this.mosaicHeightUpDown.Name = "mosaicHeightUpDown";
+            this.mosaicHeightUpDown.Size = new System.Drawing.Size(53, 22);
+            this.mosaicHeightUpDown.TabIndex = 5;
+            this.mosaicHeightUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mosaicHeightUpDown.Value = new decimal(new int[] {
+            75,
+            0,
+            0,
+            0});
+            // 
+            // mosaicWidthUpDown
+            // 
+            this.mosaicWidthUpDown.Location = new System.Drawing.Point(96, 9);
+            this.mosaicWidthUpDown.Maximum = new decimal(new int[] {
+            150,
+            0,
+            0,
+            0});
+            this.mosaicWidthUpDown.Name = "mosaicWidthUpDown";
+            this.mosaicWidthUpDown.Size = new System.Drawing.Size(53, 22);
+            this.mosaicWidthUpDown.TabIndex = 4;
+            this.mosaicWidthUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTipToolBar.SetToolTip(this.mosaicWidthUpDown, "The width of each mosaic tile.\nDisabled while a mosaic is being computed.");
+            this.mosaicWidthUpDown.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // continuousUpdateCheckbox
+            // 
+            this.continuousUpdateCheckbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.continuousUpdateCheckbox.Location = new System.Drawing.Point(475, 5);
+            this.continuousUpdateCheckbox.Name = "continuousUpdateCheckbox";
+            this.continuousUpdateCheckbox.Size = new System.Drawing.Size(144, 27);
+            this.continuousUpdateCheckbox.TabIndex = 3;
+            this.continuousUpdateCheckbox.Text = "Continuous Update";
+            this.toolTipToolBar.SetToolTip(this.continuousUpdateCheckbox, "If checked, each tile is drawn immediatley after it is computed. \nThis slows down" +
+        " things, but you see what\'s happening.\nNote: You can always force a refresh by s" +
+        "crolling or resizing the window.");
+            this.continuousUpdateCheckbox.CheckedChanged += new System.EventHandler(this.continuousUpdateCheckbox_CheckedChanged);
+            // 
+            // opacityUpDownControl
+            // 
+            this.opacityUpDownControl.Location = new System.Drawing.Point(288, 37);
+            this.opacityUpDownControl.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.opacityUpDownControl.Name = "opacityUpDownControl";
+            this.opacityUpDownControl.Size = new System.Drawing.Size(58, 22);
+            this.opacityUpDownControl.TabIndex = 2;
+            this.opacityUpDownControl.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.toolTipToolBar.SetToolTip(this.opacityUpDownControl, "The transparency with which the tile is blended into the original image.\nValid va" +
+        "lues are 10 to 100.\n  100: The tile totally replaces the background.\n   10: The " +
+        "result is 10% tile and 90% background.");
+            this.opacityUpDownControl.Value = new decimal(new int[] {
+            95,
+            0,
+            0,
+            0});
+            this.opacityUpDownControl.ValueChanged += new System.EventHandler(this.opacityUpDownControl_ValueChanged);
+            // 
+            // OpacityLabel
+            // 
+            this.OpacityLabel.Location = new System.Drawing.Point(192, 32);
+            this.OpacityLabel.Name = "OpacityLabel";
+            this.OpacityLabel.Size = new System.Drawing.Size(77, 27);
+            this.OpacityLabel.TabIndex = 1;
+            this.OpacityLabel.Text = "Opacity %:";
+            this.OpacityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.toolTipToolBar.SetToolTip(this.OpacityLabel, "The transparency with which the tile is blended into the original image.\nValid va" +
+        "lues are 10 to 100.\n  100: The tile totally replaces the background.\n  10: The r" +
+        "esult is 10% tile and 90% background.");
+            // 
+            // saveImageDialog
+            // 
+            this.saveImageDialog.DefaultExt = "jpg";
+            this.saveImageDialog.Filter = "JPEG Image|*.jpg";
+            this.saveImageDialog.Title = "Select Mosaic File Name";
+            // 
+            // statusBar
+            // 
+            this.statusBar.Location = new System.Drawing.Point(0, 434);
+            this.statusBar.Name = "statusBar";
+            this.statusBar.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
+            this.databaseStatus,
+            this.etaStatusPanel,
+            this.numTilesStatusPanel});
+            this.statusBar.ShowPanels = true;
+            this.statusBar.Size = new System.Drawing.Size(624, 19);
+            this.statusBar.TabIndex = 3;
+            this.statusBar.Text = " Status:";
+            // 
+            // databaseStatus
+            // 
+            this.databaseStatus.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            this.databaseStatus.Name = "databaseStatus";
+            this.databaseStatus.Text = "Database: 0 Tiles";
+            this.databaseStatus.Width = 119;
+            // 
+            // etaStatusPanel
+            // 
+            this.etaStatusPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            this.etaStatusPanel.Name = "etaStatusPanel";
+            this.etaStatusPanel.Text = "Time Remaining: 00:00";
+            this.etaStatusPanel.Width = 153;
+            // 
+            // numTilesStatusPanel
+            // 
+            this.numTilesStatusPanel.AutoSize = System.Windows.Forms.StatusBarPanelAutoSize.Contents;
+            this.numTilesStatusPanel.Name = "numTilesStatusPanel";
+            this.numTilesStatusPanel.Text = "Tiles: 0 of 0";
+            this.numTilesStatusPanel.Width = 84;
+            // 
+            // toolTipToolBar
+            // 
+            this.toolTipToolBar.ShowAlways = true;
+            // 
+            // cfMosaicHelp
+            // 
+            this.cfMosaicHelp.HelpNamespace = "F:\\Documents and Settings\\Carsten\\Desktop\\program\\Mosaic1\\Mosaic1\\cf mosaic oh.ch" +
+    "m";
+            // 
+            // MosaicMain
+            // 
+            this.AllowDrop = true;
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.ClientSize = new System.Drawing.Size(624, 453);
+            this.Controls.Add(this.statusBar);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Menu = this.mainMenu1;
+            this.MinimumSize = new System.Drawing.Size(533, 249);
+            this.Name = "MosaicMain";
+            this.Text = "CF Mosaic";
+            this.Load += new System.EventHandler(this.MosaicMain_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mosaicRepeatRateUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mosaicHeightUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mosaicWidthUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opacityUpDownControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.etaStatusPanel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTilesStatusPanel)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion
@@ -901,7 +906,7 @@ this.panel1.AllowDrop=true;
 
 		private void menuItem8_Click(object sender, System.EventArgs e)
 		{
-		Help.ShowHelp(this, this.cfMosaicHelp.HelpNamespace);
+			Help.ShowHelp(this, this.cfMosaicHelp.HelpNamespace);
 		}
 
 		private void menuItem9_Click(object sender, System.EventArgs e)

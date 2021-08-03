@@ -113,7 +113,6 @@
     <Content Include="CFMosaicHelp\index.htm" />
     <Content Include="CFMosaicHelp\intro.htm" />
     <Content Include="CFMosaicHelp\QuickStart.htm" />
-    <Content Include="QuickStart.htm" />
     <Compile Include="AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
